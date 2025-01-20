@@ -23,7 +23,7 @@ public class Welcome extends AppCompatActivity {
         btnwelcome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Welcome.this,MainActivity.class);
+                Intent intent = new Intent(Welcome.this,AcademyListActivity.class);
                 startActivity(intent);
 
             }
