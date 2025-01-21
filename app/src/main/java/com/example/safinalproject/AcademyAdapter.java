@@ -58,6 +58,11 @@ public class AcademyAdapter extends RecyclerView.Adapter<AcademyAdapter.AcademyV
             Intent intent = new Intent(holder.itemView.getContext(), Review.class);
             holder.itemView.getContext().startActivity(intent);
         });
+
+        holder.btnadmit.setOnClickListener(v -> {
+            Intent intent = new Intent(holder.itemView.getContext(), AdmitActivity.class);
+            holder.itemView.getContext().startActivity(intent);
+        });
     }
 
     @Override
@@ -69,6 +74,7 @@ public class AcademyAdapter extends RecyclerView.Adapter<AcademyAdapter.AcademyV
         TextView tvCenterName, tvEmail, tvPhone, tvLocation, tvPlace;
         LinearLayout expandableSection;
         Button btnFeedback;
+        Button btnadmit;
         public AcademyViewHolder(View itemView) {
             super(itemView);
             tvCenterName = itemView.findViewById(R.id.tv_center_name);
@@ -78,6 +84,7 @@ public class AcademyAdapter extends RecyclerView.Adapter<AcademyAdapter.AcademyV
             tvPlace = itemView.findViewById(R.id.tv_place);
             expandableSection = itemView.findViewById(R.id.expandable_section);
             btnFeedback = itemView.findViewById(R.id.btn_feedback);
+            btnadmit = itemView.findViewById(R.id.btn_admit);
         }
     }
 }
