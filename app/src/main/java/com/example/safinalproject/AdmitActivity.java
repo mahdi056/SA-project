@@ -61,6 +61,7 @@ public class AdmitActivity extends AppCompatActivity {
             showCustomToast("Submitted Successfully.\nWe will inform you by Email or Phone");
 
             finish();
+
         });
     }
 

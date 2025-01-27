@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         Button move = findViewById(R.id.move);
 
         move.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, Welcome.class);
+            Intent intent = new Intent(MainActivity.this, Register_activity.class);
             startActivity(intent);
         });
 

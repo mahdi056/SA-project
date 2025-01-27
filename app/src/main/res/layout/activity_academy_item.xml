@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/image_view_Academy"
+        android:layout_width="200dp"
+        android:layout_height="189dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/welcome" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="185dp"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_view_Academy_name"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_view_Academy_Phone"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/text_view_Academy_Location"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+</LinearLayout>
